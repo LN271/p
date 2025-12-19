@@ -182,7 +182,59 @@ class LayoutScreen extends StatelessWidget {
               ],
             ),
             Divider(height: 2),
-            Row()
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  margin: EdgeInsets.all(15),
+                  height: 100,
+                  width: 100,
+                  child: CircleAvatar(
+                    radius: 100,
+                    backgroundImage: NetworkImage("images/2.jfif"),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(15),
+                  height: 100,
+                  width: 100,
+                  child: CircleAvatar(
+                    radius: 100,
+                    backgroundImage: NetworkImage("images/3.jfif"),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(15),
+                  height: 100,
+                  width: 100,
+                  child: CircleAvatar(
+                    radius: 100,
+                    backgroundImage: NetworkImage("images/4.jfif"),
+                  ),
+                ),
+                SizedBox(
+                  height: 100,
+                  width: 100,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(2),
+                        child: Icon(Icons.cake),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(2),
+                        child: Icon(Icons.star),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(2),
+                        child: Icon(Icons.piano),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
